@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MemoApp</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Watson Interview</h1>
+
+    <form method="POST" action="/submit">
+      <div class="form-group">
+        <label for="input">入力内容</label>
+        <textarea rows="5" class="form-control" id="message" name = "message2"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <br>
+    <h2>Result</h2> 
+    <div class="well well-lg">
+      <%= content %>
+    </div>
+
+
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
